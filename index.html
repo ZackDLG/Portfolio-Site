@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zackary D. DeLaGarza - Project Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #111;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    }
+    header h1 {
+      color: #66fcf1;
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      color: #c5c6c7;
+      font-style: italic;
+    }
+    section {
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: auto;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      margin-bottom: 2rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
+    h2 {
+      color: #45a29e;
+      border-bottom: 2px solid #66fcf1;
+      padding-bottom: 0.5rem;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    a {
+      color: #66fcf1;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .screenshot {
+      width: 100%;
+      margin-top: 1rem;
+      border-radius: 8px;
+      border: 3px solid #66fcf1;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding-top: 1rem;
+    }
+    .gallery figure {
+      margin: 0;
+      text-align: center;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      border: 2px solid #45a29e;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    }
+    .gallery figcaption {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #c5c6c7;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #111;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Zackary Dade DeLaGarza</h1>
+    <p>Computer Science Portfolio</p>
+  </header>
+
+  <!-- Begin Projects -->
+  <section>
+    <h2>Botnet Detection with Machine Learning</h2>
+    <p>This project uses supervised machine learning to detect botnet-related traffic in network flow data. I used Zeek to extract flow-level features, cleaned the data in Python using pandas, and trained models like Random Forest and SVM to classify traffic as normal or malicious.</p>
+    <ul>
+      <li>Python (pandas, scikit-learn, matplotlib)</li>
+      <li>Zeek (network log analysis)</li>
+      <li>Google Colab for model development</li>
+      <li>Feature selection using Chi-Square and mRMR</li>
+    </ul>
+    <img src="confusion_matrix.png" alt="Confusion Matrix" class="screenshot">
+    <img src="feature_importance.png" alt="Feature Importance" class="screenshot">
+  </section>
+
+  <section>
+    <h2>Daycare Business Website</h2>
+    <p>I created a simple, responsive website using HTML and CSS for a relative who is starting a local daycare business. The site is designed to introduce the daycare’s mission, outline available services, and provide parents with basic contact information.</p>
+    <ul>
+      <li>Built from scratch using semantic HTML and custom CSS</li>
+      <li>Responsive design with flexbox and media queries</li>
+      <li>Friendly, professional branding tailored to parents</li>
+      <li>Designed for future scalability and JavaScript integration</li>
+    </ul>
+    <img src="1.png" alt="Daycare Site UI" class="screenshot">
+    
+  </section>
+
+  <section>
+    <h2>Workout App (iOS)</h2>
+    <p>A clean, beginner-friendly fitness tracking app built for iOS using Objective-C and Xcode. This app allows users to browse structured workout routines like "Upper Body" sessions, displaying duration, number of exercises, and progress. Built with UIKit and Storyboards, the app features:</p>
+    <ul>
+      <li>User Interface designed with intuitive navigation and workout detail screens</li>
+      <li>Objective-C for view logic and controller management using the MVC pattern</li>
+      <li>Launch screen customization and icon asset management with Assets.xcassets</li>
+      <li>Scene Delegation for handling app lifecycle and state transitions</li>
+    </ul>
+    <img src="7.png" alt="Workout App Screenshot" class="screenshot">
+    <img src="8.png" alt="Weekly Plan Screen" class="screenshot">
+  </section>
+
+  <section>
+    <h2>Crash Detection App (Android)</h2>
+    <p>A safety-focused mobile application built in Kotlin for Android that detects potential vehicle crashes and automatically alerts emergency contacts with the user’s real-time location. Designed with a user-first approach and responsive UI, the app integrates multiple Android services to provide fast, reliable notifications in critical situations.</p>
+    <ul>
+      <li>📍 Real-Time Location Tracking using Google Maps API</li>
+      <li>🔐 User Authentication and session handling via Firebase</li>
+      <li>⚠️ Crash Detection Logic using device motion sensors (accelerometer, gyroscope)</li>
+      <li>🔄 Live Data Updates through Firebase Realtime Database</li>
+      <li>📱 Clean, responsive UI for easy navigation and safety status display</li>
+    </ul>
+    <img src="4.png" alt="Crash Detection Overview" class="screenshot">
+    <img src="5.png" alt="Speed & Acceleration Screen" class="screenshot">
+    <img src="6.png" alt="User Profile UI" class="screenshot">
+  </section>
+
+  <section>
+    <h2>First-Person Shooter Game (Unreal Engine)</h2>
+    <p>A personal game development project built in Unreal Engine, where I collaborated with friends to create a basic but functional first-person shooter experience. This project was both fun and educational, giving me hands-on experience with game logic, 3D environments, and character control.</p>
+    <ul>
+      <li>👤 Custom Player Model with integrated first-person camera</li>
+      <li>🎮 Basic Movement System: Used WASD for navigation and SPACEBAR for jumping</li>
+      <li>🧠 Blueprint Scripting to implement core gameplay logic</li>
+      <li>🌍 Created and placed simple environmental assets and learned the fundamentals of level design</li>
+      <li>🛠️ Experimented with Unreal Engine’s editor, physics system, and object interactions</li>
+    </ul>
+    <img src="9.png" alt="FPS Prototype" class="screenshot">
+  </section>
+
+
+
+  <section>
+    <h2>🎥 Project Walkthrough Videos</h2>
+    <div class="gallery">
+      <figure>
+        <video width="100%" controls>
+          <source src="FirstPersongame1.MOV" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>First Person Game - Part 1</figcaption>
+      </figure>
+      <figure>
+        <video width="100%" controls>
+          <source src="FirstPersongame2.MOV" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>First Person Game - Part 2</figcaption>
+      </figure>
+      <figure>
+        <video width="100%" controls>
+          <source src="FitnessAppWalkthrough.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>iOS Fitness App Walkthrough</figcaption>
+      </figure>
+    </div>
+  </section>
